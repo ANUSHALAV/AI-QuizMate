@@ -1,0 +1,6 @@
+@AIQuizMate.API_HostAddress = http://localhost:5057
+
+GET {{AIQuizMate.API_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
