@@ -1,0 +1,134 @@
+:host {
+  display: block;
+}
+
+.site-footer {
+  padding: 36px 24px 18px;
+  background: #21164e;
+  color: #fff;
+}
+
+.footer-inner {
+  display: grid;
+  grid-template-columns: minmax(220px, 1.5fr) 1fr 1fr;
+  gap: 48px;
+  padding-bottom: 30px;
+}
+
+.footer-brand {
+  display: inline-flex;
+  align-items: center;
+  gap: 9px;
+  color: #fff;
+  font-size: 1.15rem;
+  font-weight: 800;
+  letter-spacing: -0.05em;
+  text-decoration: none;
+}
+
+.footer-brand-mark {
+  display: grid;
+  width: 31px;
+  height: 31px;
+  place-items: center;
+  border-radius: 10px;
+  background: #7544e4;
+  font-size: 1.15rem;
+}
+
+.footer-about p {
+  max-width: 290px;
+  margin: 12px 0 0;
+  color: #c9c2de;
+  font-size: 0.88rem;
+  line-height: 1.7;
+}
+
+.footer-nav {
+  display: grid;
+  justify-items: start;
+  gap: 9px;
+}
+
+.footer-nav h2 {
+  margin: 0 0 3px;
+  font-size: 0.9rem;
+}
+
+.footer-nav a,
+.footer-bottom a {
+  color: #c9c2de;
+  font-size: 0.84rem;
+  text-decoration: none;
+  transition: color 160ms ease;
+}
+
+.footer-nav a:hover,
+.footer-bottom a:hover {
+  color: #fff;
+}
+
+.footer-message {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  color: #e4d8ff;
+}
+
+.footer-message span {
+  font-size: 1.2rem;
+}
+
+.footer-message p {
+  margin: 3px 0 0;
+  font-size: 0.88rem;
+  font-weight: 650;
+}
+
+.footer-bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  padding-top: 16px;
+  border-top: 1px solid rgb(255 255 255 / 14%);
+}
+
+.footer-bottom p {
+  margin: 0;
+  color: #aaa1c5;
+  font-size: 0.77rem;
+}
+
+.footer-bottom a {
+  font-size: 0.77rem;
+}
+
+@media (max-width: 620px) {
+  .site-footer {
+    padding: 30px 20px 16px;
+  }
+
+  .footer-inner {
+    grid-template-columns: 1fr 1fr;
+    gap: 28px 20px;
+  }
+
+  .footer-about {
+    grid-column: 1 / -1;
+  }
+
+  .footer-message {
+    align-self: center;
+  }
+}
+
+@media (max-width: 380px) {
+  .footer-inner {
+    grid-template-columns: 1fr;
+  }
+
+  .footer-about {
+    grid-column: auto;
+  }
+}
