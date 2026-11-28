@@ -1,0 +1,175 @@
+<section class="about-section" id="about" aria-labelledby="about-title">
+  <div class="about-container">
+    <header class="about-heading">
+      <p class="about-eyebrow"><span aria-hidden="true">✦</span> Learn with purpose</p>
+      <h2 id="about-title">About <span>AIQuizMate</span></h2>
+      <p class="about-tagline">Making Learning Smarter, One Quiz at a Time.</p>
+    </header>
+
+    <div class="intro-grid">
+      <div class="intro-copy">
+        <p class="intro-lead">
+          AIQuizMate is an AI-powered learning and quiz generation platform designed to help students
+          and professionals test their knowledge through personalized quizzes.
+        </p>
+        <p>
+          Enter any custom topic, upload study notes, select specific subjects, and practice
+          with questions matched to your goals. From focused revision to exam preparation,
+          AIQuizMate makes every study session more useful.
+        </p>
+      </div>
+
+      <div class="intro-visual" aria-label="AIQuizMate learning dashboard illustration">
+        <div class="dashboard-card">
+          <div class="dashboard-top">
+            <span class="dashboard-mark" aria-hidden="true">AI</span>
+            <div>
+              <strong>Learning progress</strong>
+              <span>Today’s quiz</span>
+            </div>
+            <span class="score-badge">92%</span>
+          </div>
+          <div class="progress-track"><span></span></div>
+          <div class="dashboard-stats">
+            <div><strong>18</strong><span>Correct</span></div>
+            <div><strong>2</strong><span>Review</span></div>
+            <div><strong>20</strong><span>Total</span></div>
+          </div>
+        </div>
+        <div class="floating-badge badge-topic" aria-hidden="true">
+          <span>✓</span>
+          AI generated
+        </div>
+        <div class="floating-badge badge-score" aria-hidden="true">
+          <strong>+12</strong>
+          points
+        </div>
+      </div>
+    </div>
+
+    <section class="mission-block" aria-labelledby="mission-title">
+      <div class="mission-icon" aria-hidden="true">
+        <svg viewBox="0 0 24 24" fill="none">
+          <circle cx="12" cy="12" r="8" />
+          <circle cx="12" cy="12" r="3" />
+          <path d="m14 10 6-6m-2 0h2v2" />
+        </svg>
+      </div>
+      <div>
+        <p class="mini-heading">Our Mission</p>
+        <h3 id="mission-title">Personalized, interactive learning that is available to everyone.</h3>
+        <p>
+          We turn your chosen topics and study material into meaningful practice, giving you
+          a simple way to learn actively, identify gaps, and build confidence.
+        </p>
+      </div>
+    </section>
+
+    <section class="how-block" aria-labelledby="how-title">
+      <header class="block-heading">
+        <p class="mini-heading">Simple by design</p>
+        <h3 id="how-title">How AIQuizMate Works</h3>
+      </header>
+      <div class="steps-grid">
+        @for (step of steps; track step.number) {
+          <article class="step-card">
+            <div class="step-top">
+              <span class="step-number">{{ step.number }}</span>
+              <div class="step-icon" aria-hidden="true">
+                @switch (step.icon) {
+                  @case ('topic') {
+                    <svg viewBox="0 0 24 24" fill="none">
+                      <path d="M4 5.5A2.5 2.5 0 0 1 6.5 3H20v15H6.5A2.5 2.5 0 0 0 4 20.5v-15Z" />
+                      <path d="M8 7h8M8 11h5" />
+                    </svg>
+                  }
+                  @case ('settings') {
+                    <svg viewBox="0 0 24 24" fill="none">
+                      <circle cx="12" cy="12" r="3" />
+                      <path d="M12 3v3m0 12v3M3 12h3m12 0h3M5.6 5.6l2.1 2.1m8.6 8.6 2.1 2.1m0-12.8-2.1 2.1m-8.6 8.6-2.1 2.1" />
+                    </svg>
+                  }
+                  @case ('practice') {
+                    <svg viewBox="0 0 24 24" fill="none">
+                      <path d="m12 3 1.6 4.4L18 9l-4.4 1.6L12 15l-1.6-4.4L6 9l4.4-1.6L12 3Z" />
+                      <path d="m18.5 14 1 2.5 2.5 1-2.5 1-1 2.5" />
+                    </svg>
+                  }
+                  @case ('results') {
+                    <svg viewBox="0 0 24 24" fill="none">
+                      <path d="M4 20V5m0 15h16M7 16l3-4 3 2 5-7" />
+                      <circle cx="18" cy="7" r="1" />
+                    </svg>
+                  }
+                }
+              </div>
+            </div>
+            <h4>{{ step.title }}</h4>
+            <p>{{ step.description }}</p>
+          </article>
+        }
+      </div>
+    </section>
+
+    <section class="benefits-layout" aria-labelledby="benefits-title">
+      <div class="benefits-copy">
+        <p class="mini-heading">Built for better learning</p>
+        <h3 id="benefits-title">Why Choose AIQuizMate?</h3>
+        <p>
+          Flexible enough for any subject and smart enough to keep your practice relevant,
+          AIQuizMate helps you move from studying passively to learning with feedback.
+        </p>
+        <a class="about-button focus-ring" href="#features">
+          Explore features
+          <span aria-hidden="true">→</span>
+        </a>
+      </div>
+
+      <div class="benefits-grid">
+        @for (benefit of benefits; track benefit.title) {
+          <article class="benefit-card">
+            <span class="benefit-icon" aria-hidden="true">
+              @switch (benefit.icon) {
+                @case ('personal') {
+                  <svg viewBox="0 0 24 24" fill="none">
+                    <circle cx="12" cy="8" r="4" /><path d="M5 21v-2a7 7 0 0 1 14 0v2" />
+                  </svg>
+                }
+                @case ('subject') {
+                  <svg viewBox="0 0 24 24" fill="none">
+                    <path d="M4 4h6v6H4V4Zm10 10h6v6h-6v-6ZM7 10v4h10m0-7v7" />
+                  </svg>
+                }
+                @case ('ai') {
+                  <svg viewBox="0 0 24 24" fill="none">
+                    <path d="m12 3 1.6 4.4L18 9l-4.4 1.6L12 15l-1.6-4.4L6 9l4.4-1.6L12 3Z" />
+                  </svg>
+                }
+                @case ('tracking') {
+                  <svg viewBox="0 0 24 24" fill="none">
+                    <path d="M4 20V5m0 15h16M7 16l3-4 3 2 5-7" />
+                  </svg>
+                }
+              }
+            </span>
+            <div>
+              <h4>{{ benefit.title }}</h4>
+              <p>{{ benefit.description }}</p>
+            </div>
+          </article>
+        }
+      </div>
+    </section>
+
+    <section class="cta-block" aria-labelledby="cta-title">
+      <div>
+        <p class="cta-kicker">Your next breakthrough starts here</p>
+        <h3 id="cta-title">Ready to Test Your Knowledge?</h3>
+      </div>
+      <a class="cta-button focus-ring" href="#top">
+        Start Your First Quiz
+        <span aria-hidden="true">→</span>
+      </a>
+    </section>
+  </div>
+</section>
